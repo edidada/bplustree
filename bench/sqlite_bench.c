@@ -6,7 +6,7 @@
  *   gcc -O2 -Wall bench/sqlite_bench.c -lsqlite3 -o sqlite_bench
  *   ./sqlite_bench
  *
- * Results used by: docs/bplus_industrial_comparison.md
+ * Results used by: bplus_industrial_comparison.md (repo root)
  */
 #include <stdio.h>
 #include <stdlib.h>
