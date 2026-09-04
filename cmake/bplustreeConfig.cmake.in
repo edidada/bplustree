@@ -1,0 +1,10 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/bplustreeTargets.cmake")
+
+# Convenience variables
+set(BPLUSTREE_LIBRARIES bplustree::bplustree)
+set(BPLUSTREE_STATIC_LIBRARIES bplustree::bplustree_static)
+set(BPLUSTREE_INCLUDE_DIRS "${PACKAGE_PREFIX_DIR}/@CMAKE_INSTALL_INCLUDEDIR@")
+
+check_required_components(bplustree)

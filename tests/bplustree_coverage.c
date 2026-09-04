@@ -141,6 +141,10 @@ void exec_file(char *file, struct bplus_tree *tree)
 
 int main(void)
 {
+        /* Remove leftovers from a previous run so the test stays repeatable. */
+        remove("/tmp/coverage.index");
+        remove("/tmp/coverage.index.boot");
+
         struct bplus_tree *tree = bplus_tree_init("/tmp/coverage.index", 512);
         exec_file("testcase", tree);
         show_running_info();
